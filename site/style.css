@@ -122,6 +122,8 @@ main article {
 }
 
 main article .image-desc {
+    transition: opacity 100ms ease-in-out;
+    opacity: 1;
     position: absolute;
     bottom: 0;
     right: 10px;
@@ -139,7 +141,7 @@ main article img.front {
 main article .front {
     z-index: 1;
     opacity: 1;
-    transition: opacity 0ms ease-in-out 250ms;
+    transition: opacity 0ms linear 245ms;
 }
 
 main article .back {
@@ -152,7 +154,7 @@ main article .back {
     right: 0;
     transform: rotateY(180deg);
     opacity: 0;
-    transition: opacity 0ms ease-in-out 250ms;
+    transition: opacity 0ms linear 245ms;
 }
 
 main article.switch {
