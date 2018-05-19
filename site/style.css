@@ -39,7 +39,7 @@ nav.show a {
 
 nav.show {
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.75);
-    background-color: rgb(153, 61, 35, 1);
+    background-color: rgb(153, 61, 35, 0.8);
     color: black;
 }
 
@@ -303,6 +303,20 @@ button:not(#scrollbutton):hover,
 
 ::selection {
     background-color: rgba(153, 61, 35, 0.75);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(125, 125, 125, 0.5);
+    border-radius: 5px;
 }
 
 
