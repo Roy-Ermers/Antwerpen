@@ -13,7 +13,7 @@ document.querySelectorAll(".turn-on-hover").forEach((elem) => {
 
 function ScrollDown(target) {
     window.scrollTo({
-        top: 580, // could be negative value
+        top: 590, // could be negative value
         left: 0,
         behavior: 'smooth'
     });
