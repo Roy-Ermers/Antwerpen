@@ -1,7 +1,10 @@
 window.addEventListener('scroll', () => {
-    document.getElementsByTagName("nav")[0].classList.toggle("show", window.scrollY > 200);
-    document.getElementById("scrollbutton").style.opacity = window.scrollY < 200 ? 1 : 0;
+    //get the viewport height
+    let height = document.documentElement.clientHeight * 0.33 /*vh*/ ;
+    document.getElementsByTagName("nav")[0].classList.toggle("show", window.scrollY > height);
+    document.getElementById("scrollbutton").style.opacity = window.scrollY < height ? 1 : 0;
 });
+//keep a reference to the open tile to close it when you open another tile
 var ActiveTile = undefined;
 document.querySelectorAll(".turn-on-hover").forEach((elem) => {
     elem.addEventListener("mouseenter", (ev) => {
@@ -12,8 +15,9 @@ document.querySelectorAll(".turn-on-hover").forEach((elem) => {
 });
 
 function ScrollDown(target) {
+    let height = document.documentElement.clientHeight * 0.73 /*vh*/ ;
     window.scrollTo({
-        top: 590,
+        top: height,
         left: 0,
         behavior: "smooth"
     });

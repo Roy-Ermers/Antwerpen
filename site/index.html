@@ -9,10 +9,12 @@ Bestandsnaam:   index.html
 
 <head>
     <meta charset="utf-8" />
-    <title>Antwerpen - home</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script defer src="script.js"></script>
+    <title>Antwerpen - Home</title>
 </head>
 
 <body>
@@ -29,41 +31,35 @@ Bestandsnaam:   index.html
         <h1>De mooiste stad van België</h1>
         <hr>
         <p>
-            Antwerpen, de hoofstad van de provincie Antwerpen! Door de goede welvaart, de grote haven,het groot aantal inwoners en de eer te mogen hebben om de hoofdstad te zijn van de provincie Antwerpen krijgt het zeker een plekje in de lijst met grote em bekende
+            Antwerpen, de hoofstad van de provincie Antwerpen. Door de goede welvaart, de grote haven,het groot aantal inwoners en de eer te mogen hebben om de hoofdstad te zijn van de provincie Antwerpen krijgt het zeker een plekje in de lijst met grote em bekende
             steden!
         </p>
     </article>
     <main>
         <article>
-            <h1>Inwoners</h1>
-            <hr>
-            <p>
-                In 2018 telt Antwerpen circa 524.501 Inwoners. Door het hoge aantal inwoners maakt het zich de grootste gemeente van België.
-                <br> De inwoners van Antwerpen worden vaak
-                <u>Sinjoren</u> genoemd. het woord
-                <u>Sinjoren</u> komt van het spaanse woord <b>señor</b> af.
-            </p>
-        </article>
-        <article>
             <div class="front">
-                <h1>Geschiedenis</h1>
+                <h1 onclick="Turn(this)">Inwoners</h1>
                 <hr>
-                <p> Atque quaerat dolorem sunt delectus incidunt, nesciunt molestias, nostrum exercitationem molestiae ad repellendus laborum alias maxime beatae necessitatibus eaque iste amet distinctio? Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Ratione, quam? Laudantium voluptatem odio reprehenderit cumque in! Possimus, consectetur aspernatur voluptatem quibusdam saepe illo sequi eaque soluta, odio optio, nulla quo? Lorem, ipsum dolor sit amet consectetur adipisicing
-                    elit. Modi quis voluptates unde, harum ipsam natus rem. Nobis ipsa praesentium, alias amet pariatur animi excepturi dicta ad maxime aliquid eveniet corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus
-                    ratione architecto accusantium. Tempore in praesentium, cupiditate aperiam rem illum nostrum ad vero. Voluptas eos consequatur mollitia animi. Dolorum, repellendus!</p>
-                <button onclick="Turn(this)">meer info</button>
-            </div>
-            <div class="back" onclick="Turn(this)">
-                <h1>You Aquired a secret ninja!</h1>
-                <hr>
-                <p>hihi you found me!
-                    <br>
-                    <font size="500px">🐱‍👤</font><br>
-                    <a class="button" href="http://ninjaflex.com/">Claim</a>
+                <p>
+                    In 2018 telt Antwerpen circa 524.501 Inwoners. Door het hoge aantal inwoners maakt het zich de grootste gemeente van België.
+                    <br> De inwoners van Antwerpen worden vaak
+                    <u>Sinjoren</u> genoemd. het woord
+                    <u>Sinjoren</u> komt van het spaanse woord <b>señor</b> af.
                 </p>
             </div>
+            <div class="back" onclick="Turn(this)">
+                <h1 style="margin: 0;">You passed a secret agent!</h1>
+                <hr>
+                <p style="margin: 0;">he offers you a free ride home.
+                    <br>
+                    <font style="font-size: 32px;">🕴️</font><br>
+                    <a class="button" target="_blank" href="https://img.memecdn.com/pedo-van_o_1328905.jpg">Yes</a>
+                    <a class="button" target="_blank" href="https://vignette.wikia.nocookie.net/plantsvszombies/images/a/a9/Instant_button_grand_theft_auto_v_instant_wasted_by_tukari_g3-d9lidfc.png/revision/latest?cb=20160306230006">No</a>
+                </p>
+            </div>
+
         </article>
+
         <article class="stats">
             <div>
                 <h1>Inwoners</h1>
@@ -77,14 +73,21 @@ Bestandsnaam:   index.html
                 <h1>Huizen</h1>
                 <p>900.98</p>
             </div>
+        </article>
+        <article>
+            <div class="front">
+                <h1>Geschiedenis</h1>
+                <hr>
+                <p> Atque quaerat dolorem sunt delectus incidunt, nesciunt molestias, nostrum exercitationem molestiae ad repellendus laborum alias maxime beatae necessitatibus eaque iste amet distinctio? Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Ratione, quam? Laudantium voluptatem odio reprehenderit cumque in! Possimus, consectetur aspernatur voluptatem quibusdam saepe illo sequi eaque soluta, odio optio, nulla quo? Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Modi quis voluptates unde, harum ipsam natus rem. Nobis ipsa praesentium, alias amet pariatur animi excepturi dicta ad maxime aliquid eveniet corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus
+                    ratione architecto accusantium. Tempore in praesentium, cupiditate aperiam rem illum nostrum ad vero. Voluptas eos consequatur mollitia animi. Dolorum, repellendus!</p>
+                <button onclick="Turn(this)">meer info</button>
             </div>
-            <div>
-                <h1>Huizen</h1>
-                <p>900.98</p>
-            </div>
-            <div>
-                <h1>Huizen</h1>
-                <p>900.98</p>
+            <div class="back colored" onclick="Turn(this)">
+                <h1>Geschiedenis</h1>
+                <hr>
+                <p>meer info op <a href="geschiedenis.html">Geschiedenis</a></p>
             </div>
         </article>
         <article class="turn-on-hover">
