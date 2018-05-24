@@ -10,6 +10,10 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+article {
+    animation: Rise 500ms ease-in-out;
+}
+
 /*#region navbar*/
 
 nav {
@@ -431,7 +435,7 @@ button:not(#scrollbutton):hover, .button:hover {
 
 /* #region queries and keyframes */
 
-@media only screen and (max-device-width: 780px) {
+@media only screen and (max-width: 780px) {
     header {
         height: 33vh;
         animation: none;
@@ -441,7 +445,7 @@ button:not(#scrollbutton):hover, .button:hover {
         font-size: 4em;
     }
     nav a {
-        font-size: 0.71em;
+        font-size: 0.68em;
         text-decoration: none;
     }
     body>article {
@@ -468,7 +472,7 @@ button:not(#scrollbutton):hover, .button:hover {
         width: 100%;
     }
     main.timeline {
-        margin-right: 15%;
+        margin-right: 2%;
         padding-left: 5%;
     }
     main.timeline::after {
@@ -476,6 +480,23 @@ button:not(#scrollbutton):hover, .button:hover {
     }
     main.timeline>div>h1 {
         font-size: 3em;
+    }
+    main.timeline>div>h1:after {
+        margin-left: .25em;
+        margin-right: -2.75rem;
+        width: 1em;
+    }
+    main article.side-img {
+        flex-direction: column;
+    }
+    main article.side-img img {
+        width: calc(100% + 20px);
+        margin: -10px -10px;
+        display: block;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    }
+    .happening h1 {
+        font-size: 2.5em;
     }
 }
 
@@ -493,6 +514,17 @@ button:not(#scrollbutton):hover, .button:hover {
         transform: translateY(-50px);
     }
     100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes Rise {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
         transform: translateY(0);
     }
 }
